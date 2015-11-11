@@ -1,0 +1,11 @@
+UseDNS no
+PermitRootLogin no
+Subsystem sftp internal-sftp
+X11Forwarding no
+AllowTcpForwarding no
+ForceCommand internal-sftp
+PubkeyAuthentication yes
+RSAAuthentication yes
+PasswordAuthentication	no
+UsePAM			no
+LogLevel INFO
