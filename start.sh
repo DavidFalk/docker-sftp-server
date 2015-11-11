@@ -1,5 +1,4 @@
 #!/bin/bash
-
 : ${CLIENTS:?"Need to set CLIENTS"}
 
 if ls /ssh/ssh_host_* 1> /dev/null 2>&1; then
@@ -9,7 +8,6 @@ else
     cp /etc/ssh/ssh_host_* /ssh/
 fi
 chmod -R 700 /etc/ssh/ssh_host_*
-
 
 IFS=':' read -a clientsarray <<< "$CLIENTS"
 
